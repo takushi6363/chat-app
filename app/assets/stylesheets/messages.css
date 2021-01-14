@@ -1,54 +1,75 @@
 .wrapper {
   display: flex;
 }
+
+/* サイドバーのCSS */
 .side-bar {
   background-color: #253141;
   width: 300px;
   height: 100vh;
-
-
 }
+
+/* サイドバーヘッダー */
+
+.side-bar-header {
+  height: 100px;
+  padding: 0 20px;
+  background-color: #253141;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-name a{
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.create-room a {
+  font-size: 10px;
+  border: 1px solid lightblue;
+  padding: 14px;
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+/* 左下のCSS */
+
+
+.rooms {
+  background-color: #2F3E51;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+  overflow: scroll;
+}
+
+.room {
+  padding: 20px 0 40px;
+}
+
+.room-name a {
+  text-decoration: none;
+  color: white;
+}
+
+/* 右側のCSS */
+
 .chat {
   background-color: #FFFFFF;
   width: calc(100vw - 300px);
 }
 
-/* 左側のCSS */
-
-.side_main{
-  
-}
-
-.side_middle{
+.chat-header {
   height: 100px;
-  background-color: #253141;
-  padding:0px 20px;
+  padding: 0 40px;
 }
-
-.side_under{
-  height: calc(100vh - 100px);
-  background-color: #2f3e51;
-  padding:0px 20px;
-}
-
-
-/* メインのCSS */
-
-
-.main_top{
-  height: 100px;
-  background-color: #ffffff;
-  padding:0px 40px;
-}
-
-.main_middle{
+.messages {
+  background-color: #FAFAFA;
   height: calc(100vh - 100px - 90px);
-  background-color: #fafafa;
-  padding:46px 40px 0px;
+  padding: 46px 40px 0;
 }
-
-.main_under{
+.form {
+  background-color: #DDDDDD;
   height: 90px;
-  background-color: #dddddd;
-  padding:20px 40px;
+  padding: 20px 40px;
 }
