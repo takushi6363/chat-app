@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
- *　{
-   box-sizing: border-box;
- }
+ */
+ * {
+  box-sizing: border-box;
+}
